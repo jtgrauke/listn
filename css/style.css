@@ -37,48 +37,6 @@ textarea {
 }
 
 
-input {
-    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
-    overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
-    padding: 12px 2%;
-}
-
-input[type="submit"] {
-    font-size: 14px;
-    font-weight: 800;
-    text-transform: uppercase;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background-color: #46B846;
-    color: #fff;
-    border-bottom: 2px solid rgba(0,0,0,0.1);
-}
-
-html input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-    background-color: #3EA53E;
-}
-
-input[type=text]{
-    color: #333;
-    border: 0;
-    border-radius: 0;
-    outline: 0;
-    font-size: 14px;
-    background: #eee;
-    border-bottom: 2px solid rgba(0,0,0,0.05);
-}
-
-input:focus,
-input[type=text]:focus,
-input[type=email]:focus,
-textarea:focus {
-    color: #111;
-    outline: 0;
-}
-
 
 /* Links */
 
@@ -110,20 +68,20 @@ a:hover {
     background: #fff;
     overflow: hidden;
     border-radius: 3px;
-    border-bottom: 5px solid #afaeac;
+    border: 1px solid #d9d9d9;
+    border-bottom: 3px solid #bebebe;
 }
 
 #header {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .name {
     font-weight: 800;
     font-size: 80px;
     text-transform: uppercase;
-    color: #0090b5;
+    color: #00A5CF;
 }
 
 .name span {
@@ -134,20 +92,65 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     display: inline-block;
-    border-radius: 3px;
-    overflow: hidden;
 }
 
 .item input {
     float: left;
 }
 
-.item input.item {
-    width: 76%;
+.item .item {
+    width: 75%;
+    margin: 0 -2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
-.item input.submit {
+.item .submit {
     width: 20%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+input {
+    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+    overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+    padding: 14px 2%;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    padding: 14px 0;
+}
+
+input[type=text]{
+    color: #333;
+    font-size: 14px;
+    background: #eee;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+input.create {
+    border: 2px solid #ddd;
+    border-right: 2px solid #fff;
+    background: #fff;
+}
+
+input.add {
+    background-color: #46B846;
+}
+
+input.add:active {
+    background-color: #3EA53E;
 }
 
 input.to-do {
@@ -159,17 +162,16 @@ input.to-do:active {
 }
 
 input.done {
-    background-color: red;
+    background-color: #FD4A28;
 }
 
 input.done:active {
-    background-color: red;
+    background-color: #FD4A28;
 }
 
-.complete {
-    opacity: .25;
+.complete .done {
+    cursor: default;
 }
-
 
 /* ============================================== */
 /* Header
