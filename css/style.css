@@ -14,16 +14,10 @@ body {
     background: #dbdbdb;
 }
 
-/* Headings */
 h1,h2,h3,h4,h5,h6 {
     font-style: normal;
     margin-bottom: 16px;
 }
-
-
-
-
-/* Buttons, Inputs */
 
 button,
 input,
@@ -36,10 +30,6 @@ textarea {
     box-shadow: none;
 }
 
-
-
-/* Links */
-
 a {
     color: #1a1a1a;
     text-decoration: none;
@@ -50,8 +40,6 @@ a:hover {
     color: #57AD69;
     text-decoration: underline;
 }
-
-
 
 
 /* ============================================== */
@@ -117,7 +105,8 @@ input {
     padding: 14px 2%;
     border: 2px solid transparent;
     border-bottom: 2px solid rgba(0,0,0,0.1);
-    webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 input:focus {
