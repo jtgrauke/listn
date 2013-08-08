@@ -47,11 +47,11 @@ a:hover {
 /* ============================================== */
 
 .wrapper {
-    padding:  50px 6% 100px;
+    padding: 5%;
     position: relative;
     text-align: center;
     width: 500px;
-    margin: 6% auto;
+    margin: 5% auto;
     max-width: 80%;
     background: #fff;
     overflow: hidden;
@@ -106,7 +106,7 @@ input {
     border: 2px solid transparent;
     border-bottom: 2px solid rgba(0,0,0,0.1);
     -webkit-appearance: none;
-    -moz-appearance: none;
+    border-radius: 0;
 }
 
 input:focus {
