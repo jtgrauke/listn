@@ -1,0 +1,308 @@
+/* Typography */
+
+body {
+    font-size: 16px;
+    font-family: "Source Sans Pro", Helvetica;
+    line-height: 1.5;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    color: #333;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: #dbdbdb;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+    font-style: normal;
+    margin-bottom: 16px;
+}
+
+
+
+
+/* Buttons, Inputs */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    vertical-align: middle;
+    box-shadow: none;
+}
+
+
+input {
+    line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+    overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+    padding: 12px 2%;
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #46B846;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    background-color: #3EA53E;
+}
+
+input[type=text]{
+    color: #333;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    font-size: 14px;
+    background: #eee;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+input:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    color: #111;
+    outline: 0;
+}
+
+
+/* Links */
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border: 0;
+}
+
+a:hover {
+    color: #57AD69;
+    text-decoration: underline;
+}
+
+
+
+
+/* ============================================== */
+/* Header
+/* ============================================== */
+
+.wrapper {
+    padding:  50px 6% 100px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    margin: 6% auto;
+    max-width: 80%;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 3px;
+    border-bottom: 5px solid #afaeac;
+}
+
+#header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.name {
+    font-weight: 800;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #0090b5;
+}
+
+.name span {
+    color: #ddd;
+}
+
+.item {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.item input {
+    float: left;
+}
+
+.item input.item {
+    width: 76%;
+}
+
+.item input.submit {
+    width: 20%;
+}
+
+input.to-do {
+    background-color: #EBBF4D;
+}
+
+input.to-do:active {
+    background-color: #D4AC45;
+}
+
+input.done {
+    background-color: red;
+}
+
+input.done:active {
+    background-color: red;
+}
+
+.complete {
+    opacity: .25;
+}
+
+
+/* ============================================== */
+/* Header
+/* ============================================== */
+
+
+.button {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.tooltip {
+    font-size: 14px;
+    transition: all .2s ease;
+    opacity: 0;
+    background: rgb(50,50,50);
+    color: #fff;
+    padding: 4px 12px 3px;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 2px;
+    position: relative;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.tooltip:after {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid transparent;
+    border-right: 5px solid rgb(50,50,50);
+    border-top: 7px solid transparent;
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    content: '';
+}
+
+.box {
+    font-size: 14px;
+    border-radius: 2px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.nav {
+    float: left;
+    width: 15%;
+    background: #ddd;
+    position: absolute;
+    top: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav ul li {
+    text-align: center;
+    list-style: none;
+    display: block;
+}
+
+.nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #000;
+}
+
+.selected, .selected:hover  {
+    background: #eee;
+    color: #000;
+}
+
+
+.box .content {
+    width: 80%;
+    padding-left: 15%;
+    float: right;
+}
+
+.content div {
+    display: none;
+}
+
+.content div img {
+    max-width: 100%;
+    height: auto;
+}
+
+#one {
+    display: block;
+}
+
+
+
+
+
+.entry-content {
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+.entry-content p {
+    margin-bottom: 24px;
+}
+
+.entry-content h6 {
+    display: none;
+}
+
+.entry-content li {
+    list-style: inherit;
+}
+
+/* ============================================== */
+/* 13. Responsive Structure
+/* ============================================== */
+
+
+@media only screen and (max-width: 1140px) {}
+
+
+@media only screen and (max-width: 568px) {
+
+
+
+}
