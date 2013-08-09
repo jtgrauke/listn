@@ -15,6 +15,7 @@ function clickItem() {
         $(todoItem).appendTo('.to-do-items-wrapper').slideDown(250);
         // Reset the value of the users input to '' so they don't accidentally add the same item twice
         document.getElementById("userInput").value = '';
+        // Display the delete button in case they need to all be removed
         $('.delete-all').slideDown();
     }
 }
@@ -31,20 +32,30 @@ function enterItem() {
     };
 }
 
+// Function to change the styling for when an item is marked complete
 function completeItem() {
+    // Find the check mark button, and when it's clicked...
     $(this).find('#userAction').click(function(){
+        // Add a completed class
         $(this).parent().addClass('completed');
+        // And display the delete button to remove them
         $('.delete-completed').slideDown();
     });
 }
 
+// Delete the complete items
 function deleteCompleted() {
+    // Find the ones that have a completed class and slide them up
     $(this).closest('.wrapper').find('.to-do-items-wrapper').children('.completed').slideUp();
+    // Now hide the delete trigger since there's nothing more to delete
     $('.delete-completed').slideUp();
 }
 
+// Delete all items
 function deleteAll() {
+    // Find the items in the DOM and slide them up
     $(this).closest('.wrapper').find('.to-do-items-wrapper').children().slideUp();
+    // Now hide the delete trigger since there are no more items!
     $('.delete-all').slideUp();
 }
 
