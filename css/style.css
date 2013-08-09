@@ -61,8 +61,7 @@ a:hover {
 }
 
 #header {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .name {
@@ -184,7 +183,6 @@ input.add:active {
     font-weight: 700;
     padding: 20px 0 0;
     cursor: pointer;
-    display: none;
     margin: 0 auto;
     color: #999;
 }
@@ -195,8 +193,10 @@ input.add:active {
 
 .delete-completed {
     float: left;
+    display: none;
 }
 
 .delete-all {
     float: right;
+    display: block;
 }

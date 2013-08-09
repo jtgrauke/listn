@@ -15,8 +15,6 @@ function clickItem() {
         $(todoItem).appendTo('.to-do-items-wrapper').slideDown(250);
         // Reset the value of the users input to '' so they don't accidentally add the same item twice
         document.getElementById("userInput").value = '';
-        // Display the delete button in case they need to all be removed
-        $('.delete-all').slideDown();
     }
 }
 // Take the user input upon pressing enter, and add it as a to-do item in a list
@@ -56,7 +54,6 @@ function deleteAll() {
     // Find the items in the DOM and slide them up
     $(this).closest('.wrapper').find('.to-do-items-wrapper').children().slideUp();
     // Now hide the delete trigger since there are no more items!
-    $('.delete-all').slideUp();
     $('.delete-completed').slideUp();
 }
 
