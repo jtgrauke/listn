@@ -76,35 +76,11 @@ a:hover {
     color: #ddd;
 }
 
-.item {
-    width: 100%;
-    margin: 0 auto;
-    display: inline-block;
-}
-
-.item input {
-    float: left;
-}
-
-.item .item {
-    width: 75%;
-    margin: 0 -2px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-.item .submit {
-    width: 20%;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
 input {
     line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
     overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
     padding: 14px 2%;
     border: 2px solid transparent;
-    border-bottom: 2px solid rgba(0,0,0,0.1);
     -webkit-appearance: none;
     border-radius: 0;
 }
@@ -113,7 +89,7 @@ input:focus {
     outline: 0;
 }
 
-input[type="submit"] {
+input[type="submit"], .submit {
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
@@ -122,14 +98,18 @@ input[type="submit"] {
     padding: 14px 0;
 }
 
-input[type=text]{
-    color: #333;
-    font-size: 14px;
-    background: #eee;
-    border-bottom: 2px solid rgba(0,0,0,0.05);
+.add-wrapper, .to-do-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
 }
 
-input.create {
+.add-to-do {
+    width: 75%;
+    margin: 0 -2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    float: left;
     border: 2px solid #ddd;
     border-right: 2px solid #fff;
     background: #fff;
@@ -143,21 +123,51 @@ input.add:active {
     background-color: #3EA53E;
 }
 
-input.to-do {
-    background-color: #EBBF4D;
+.submit {
+    width: 20%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: inline-block;
 }
 
-input.to-do:active {
-    background-color: #D4AC45;
+
+.to-do-wrapper {
+    display: none;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    background: #eee;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
-input.done {
-    background-color: #FD4A28;
+.to-do.item {
+    float: left;
+    color: #333;
+    background: #eee;
+    font-size: 14px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
-input.done:active {
-    background-color: #FD4A28;
+.submit.complete-item {
+    float: right;
 }
+
+.submit.complete-item {
+    background-color: #EEC048;
+}
+
+.submit.complete-item:active {
+    background-color: #D8B24F;
+}
+
+.submit.complete-item i {
+    font-size: 18px;
+}
+
+
+
+
 
 .complete .done {
     cursor: default;
