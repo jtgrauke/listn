@@ -15,14 +15,20 @@
         <div id="header">
             <h1 class="name">List<span>'n</span></h1>
             <div class="add-wrapper">
-                <input type="text" id="userInput" class="add-to-do">
-                <input type="submit" class="submit add" value="Add">
+                <input type="text" id="userInput" class="add-to-do" placeholder="Need to remember something?">
+                <input type="submit" class="submit add" value="Add It">
             </div>
         </div>
-        <ul id="to-do-items">
+        <ul id="sortable" class="to-do-items-wrapper">
         </ul>
+
+        <div class="delete-completed">Remove Selected</div>
+        <div class="delete-all"><i class="icon-trash"></i> Delete All</div>
+
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
     <script src="application.js"></script>
 </body>
 </html>

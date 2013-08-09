@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: #57AD69;
+    color: #333;
     text-decoration: underline;
 }
 
@@ -47,7 +47,7 @@ a:hover {
 /* ============================================== */
 
 .wrapper {
-    padding: 5%;
+    padding: 5% 5% 2%;
     position: relative;
     text-align: center;
     width: 500px;
@@ -105,7 +105,7 @@ input[type="submit"], .submit {
 }
 
 .add-to-do {
-    width: 75%;
+    width: 63%;
     margin: 0 -2px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -116,28 +116,27 @@ input[type="submit"], .submit {
 }
 
 input.add {
-    background-color: #00A5CF;
+    background-color: #46B846;
 }
 
 input.add:active {
-    background-color: #0088AA;
+    background-color: #3CA13C;
 }
 
 .submit {
-    width: 20%;
+    width: 33%;
+    height: 50px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     display: inline-block;
 }
 
-
 .to-do-wrapper {
     display: none;
     overflow: hidden;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     background: #eee;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px;
     position: relative;
 }
 
@@ -145,7 +144,7 @@ input.add:active {
     width: 74%;
     float: left;
     color: #333;
-    background: #eee;
+    background: transparent;
     font-size: 14px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -156,13 +155,14 @@ input.add:active {
 }
 
 .submit.complete-item {
-    background-color: #46B846;
+    background-color: #eee;
+    color: #333;
     height: 20px;
     width: 50px;
 }
 
 .submit.complete-item:active {
-    background-color: #D8B24F;
+    background-color: #ddd;
 }
 
 .submit.complete-item i {
@@ -172,15 +172,35 @@ input.add:active {
     top: 15px;
 }
 
-
-
-
 .completed .submit.complete-item, .to-do-wrapper.completed, .completed .to-do.item {
     cursor: default;
     background: #F35E5E;
-    color: #fff;
+    color: #A33939;
     border-radius: 3px;
 }
+
+.delete-completed, .delete-all {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 0 0;
+    cursor: pointer;
+    display: none;
+    margin: 0 auto;
+    color: #999;
+}
+
+.delete-completed:hover, .delete-all:hover {
+    color: #aaa;
+}
+
+.delete-completed {
+    float: left;
+}
+
+.delete-all {
+    float: right;
+}
+
 
 /* ============================================== */
 /* Header
