@@ -67,7 +67,7 @@ a:hover {
 .name {
     font-weight: 800;
     font-size: 80px;
-    text-transform: uppercase;
+    letter-spacing: -2px;
     color: #00A5CF;
 }
 
@@ -89,9 +89,7 @@ input:focus {
 }
 
 input[type="submit"], .submit {
-    font-size: 14px;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 700;
     cursor: pointer;
     color: #fff;
     padding: 14px 0;
@@ -178,25 +176,17 @@ input.add:active {
     border-radius: 3px;
 }
 
-.delete-completed, .delete-all {
-    text-transform: uppercase;
-    font-weight: 700;
+.delete-completed {
     padding: 20px 0 0;
     cursor: pointer;
     margin: 0 auto;
     color: #999;
-}
-
-.delete-completed:hover, .delete-all:hover {
-    color: #aaa;
-}
-
-.delete-completed {
-    float: left;
+    float: right;
+    font-weight: 600;
     display: none;
 }
 
-.delete-all {
-    float: right;
-    display: block;
+.delete-completed:hover {
+    color: #aaa;
 }
+

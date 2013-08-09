@@ -49,21 +49,12 @@ function deleteCompleted() {
     $('.delete-completed').slideUp();
 }
 
-// Delete all items
-function deleteAll() {
-    // Find the items in the DOM and slide them up
-    $(this).closest('.wrapper').find('.to-do-items-wrapper').children().slideUp();
-    // Now hide the delete trigger since there are no more items!
-    $('.delete-completed').slideUp();
-}
-
 $(document).ready(function() {
 
     // Event Handlers
     $('#userInput').keydown(enterItem);
     $('.add').click(clickItem);
     $('.delete-completed').click(deleteCompleted);
-    $('.delete-all').click(deleteAll);
     $('.to-do-items-wrapper').on('mouseenter', '.to-do-wrapper', completeItem);
 
 }); // END OF DOCUMENT
