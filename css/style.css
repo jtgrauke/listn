@@ -116,11 +116,11 @@ input[type="submit"], .submit {
 }
 
 input.add {
-    background-color: #46B846;
+    background-color: #00A5CF;
 }
 
 input.add:active {
-    background-color: #3EA53E;
+    background-color: #0088AA;
 }
 
 .submit {
@@ -138,9 +138,11 @@ input.add:active {
     background: #eee;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    position: relative;
 }
 
 .to-do.item {
+    width: 74%;
     float: left;
     color: #333;
     background: #eee;
@@ -154,7 +156,9 @@ input.add:active {
 }
 
 .submit.complete-item {
-    background-color: #EEC048;
+    background-color: #46B846;
+    height: 20px;
+    width: 50px;
 }
 
 .submit.complete-item:active {
@@ -163,14 +167,19 @@ input.add:active {
 
 .submit.complete-item i {
     font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
 
 
 
 
-
-.complete .done {
+.completed .submit.complete-item, .to-do-wrapper.completed, .completed .to-do.item {
     cursor: default;
+    background: #F35E5E;
+    color: #fff;
+    border-radius: 3px;
 }
 
 /* ============================================== */
