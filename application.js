@@ -57,6 +57,7 @@ function deleteAll() {
     $(this).closest('.wrapper').find('.to-do-items-wrapper').children().slideUp();
     // Now hide the delete trigger since there are no more items!
     $('.delete-all').slideUp();
+    $('.delete-completed').slideUp();
 }
 
 $(document).ready(function() {
