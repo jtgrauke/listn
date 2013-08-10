@@ -92,6 +92,7 @@ input[type="submit"], .submit {
 
 .add-to-do {
     width: 63%;
+    height: 18px;
     margin: 0 -2px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
