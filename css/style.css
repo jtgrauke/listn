@@ -7,16 +7,11 @@ body {
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
-    color: #333;
+    color: #757575;
     position: absolute;
     width: 100%;
     top: 0;
     background: #dbdbdb;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-style: normal;
-    margin-bottom: 16px;
 }
 
 button,
@@ -31,13 +26,13 @@ textarea {
 }
 
 a {
-    color: #1a1a1a;
+    color: #757575;
     text-decoration: none;
     border: 0;
 }
 
 a:hover {
-    color: #333;
+    color: #555;
     text-decoration: underline;
 }
 
@@ -51,29 +46,25 @@ a:hover {
     position: relative;
     text-align: center;
     width: 500px;
-    margin: 5% auto;
+    margin: 0 auto;
     max-width: 80%;
     background: #fff;
     overflow: hidden;
-    border-radius: 3px;
     border: 1px solid #d9d9d9;
+    border-top: 0;
     border-bottom: 3px solid #bebebe;
 }
 
-#header {
-    padding-bottom: 20px;
-}
+#header {padding-bottom: 20px;}
 
 .name {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 80px;
     letter-spacing: -2px;
     color: #00A5CF;
 }
 
-.name span {
-    color: #ddd;
-}
+.name span {color: #ddd;}
 
 input {
     line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
@@ -84,9 +75,7 @@ input {
     border-radius: 0;
 }
 
-input:focus {
-    outline: 0;
-}
+input:focus {outline: 0;}
 
 input[type="submit"], .submit {
     font-weight: 700;
@@ -107,18 +96,15 @@ input[type="submit"], .submit {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     float: left;
-    border: 2px solid #ddd;
+    border: 2px solid #eee;
     border-right: 2px solid #fff;
     background: #fff;
+    color: #757575;
 }
 
-input.add {
-    background-color: #46B846;
-}
-
-input.add:active {
-    background-color: #3CA13C;
-}
+.add-to-do:focus {border: 2px solid #ddd;}
+input.add {background-color: #46B846;}
+input.add:active {background-color: #3CA13C;}
 
 .submit {
     width: 33%;
@@ -135,42 +121,42 @@ input.add:active {
     background: #eee;
     border-radius: 3px;
     position: relative;
+    -webkit-transition: background-color .25s ease;
+       -moz-transition: background-color .25s ease;
+        -ms-transition: background-color .25s ease;
+         -o-transition: background-color .25s ease;
+            transition: background-color .25s ease;
 }
 
 .to-do.item {
-    width: 74%;
+    width: 85%;
+    height: 16px;
     float: left;
-    color: #333;
     background: transparent;
     font-size: 14px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    cursor: pointer;
+    color: #757575;
 }
 
-.submit.complete-item {
-    float: right;
+.complete-item {
+    height: 50px;
+    cursor: pointer;
+    width: 55px;
+    position: absolute;
+    right: 0;
+    color: #757575;
 }
 
-.submit.complete-item {
-    background-color: #eee;
-    color: #333;
-    height: 20px;
-    width: 50px;
-}
-
-.submit.complete-item:active {
-    background-color: #ddd;
-}
-
-.submit.complete-item i {
+.complete-item i {
     font-size: 18px;
     position: absolute;
-    right: 15px;
+    right: 20px;
     top: 15px;
 }
 
-.completed .submit.complete-item, .to-do-wrapper.completed, .completed .to-do.item {
-    cursor: default;
+.completed .complete-item, .to-do-wrapper.completed, .completed .to-do.item {
     background: #F35E5E;
     color: #A33939;
     border-radius: 3px;
@@ -184,9 +170,11 @@ input.add:active {
     float: right;
     font-weight: 600;
     display: none;
+    -webkit-transition: color .25s ease;
+       -moz-transition: color .25s ease;
+        -ms-transition: color .25s ease;
+         -o-transition: color .25s ease;
+            transition: color .25s ease;
 }
 
-.delete-completed:hover {
-    color: #aaa;
-}
-
+.delete-completed:hover {color: #555;}
