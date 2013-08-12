@@ -151,20 +151,31 @@ input.add:active {background-color: #3CA13C;}
     top: 15px;
 }
 
-.completed .complete-item, .to-do-wrapper.completed, .completed .to-do.item {
+.to-do-wrapper.completed {
     background: #DDF8DE;
-    color: #5E9648;
-    border-radius: 3px;
-    -webkit-transition: background .3s ease, color .3s;
-       -moz-transition: background .3s ease, color .3s;
-        -ms-transition: background .3s ease, color .3s;
-         -o-transition: background .3s ease, color .3s;
-            transition: background .3s ease, color .3s;
+    -webkit-transition: background .3s ease;
+       -moz-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+         -o-transition: background .3s ease;
+            transition: background .3s ease;
 }
 
-.completed.about-to-delete .complete-item, .to-do-wrapper.completed.about-to-delete, .completed.about-to-delete .to-do.item {
-    background: #E75959;
-    color: #A33939;
+.completed .to-do.item, .completed .complete-item {
+    color: #5E9648;
+    -webkit-transition: color .3s ease;
+       -moz-transition: color .3s ease;
+        -ms-transition: color .3s ease;
+         -o-transition: color .3s ease;
+            transition: color .3s ease;
+}
+
+.to-do-wrapper.completed.about-to-delete {
+    background: #F58D73;
+
+}
+
+.completed.about-to-delete .complete-item, .completed.about-to-delete .to-do.item {
+    color: #fff;
 }
 
 .delete-completed {
