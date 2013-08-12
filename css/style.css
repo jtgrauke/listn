@@ -124,9 +124,11 @@ input.add:active {background-color: #3CA13C;}
 }
 
 .to-do.item {
-    width: 85%;
+    width: 88%;
     height: 16px;
+    padding-left: 0;
     float: left;
+    margin-left: 45px;
     background: transparent;
     font-size: 14px;
     border-top-left-radius: 3px;
@@ -136,18 +138,18 @@ input.add:active {background-color: #3CA13C;}
 }
 
 .complete-item {
-    height: 50px;
+    height: 48px;
     cursor: pointer;
-    width: 55px;
+    width: 45px;
     position: absolute;
-    right: 0;
+    left: 0;
     color: #757575;
 }
 
 .complete-item i {
     font-size: 18px;
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 15px;
 }
 
