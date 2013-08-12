@@ -161,7 +161,7 @@ input.add:active {background-color: #3CA13C;}
 }
 
 .completed .to-do.item, .completed .complete-item {
-    color: #5E9648;
+    color: #3CA13C;
     -webkit-transition: color .3s ease;
        -moz-transition: color .3s ease;
         -ms-transition: color .3s ease;
