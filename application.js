@@ -33,10 +33,14 @@ function completeItem() {
     // Find the check mark button, and when it's clicked...
     $(this).find('#userAction').parent().toggleClass('completed');
     // If the completed class is found, show the option to delete them, if not, hide the delete trigger
-    if ($('.to-do-wrapper').hasClass('completed')) {
+    if ($(this).closest('.to-do-wrapper').hasClass('completed')) {
         $('.delete-completed').slideDown();
+        $(this).find('#userAction i').addClass('icon-ok').removeClass('icon-remove');
+        console.log('complete');
     } else {
         $('.delete-completed').slideUp();
+        $(this).find('#userAction i').addClass('icon-remove').removeClass('icon-ok');
+        console.log('not complete');
     }
 }
 
@@ -57,8 +61,6 @@ $(document).ready(function() {
     $('.to-do-items-wrapper').on('click', '.to-do-wrapper', completeItem);
 
 }); // END OF DOCUMENT
-
-
 
 
 
