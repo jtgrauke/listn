@@ -121,11 +121,6 @@ input.add:active {background-color: #3CA13C;}
     background: #eee;
     border-radius: 3px;
     position: relative;
-    -webkit-transition: background-color .25s ease;
-       -moz-transition: background-color .25s ease;
-        -ms-transition: background-color .25s ease;
-         -o-transition: background-color .25s ease;
-            transition: background-color .25s ease;
 }
 
 .to-do.item {
@@ -157,9 +152,19 @@ input.add:active {background-color: #3CA13C;}
 }
 
 .completed .complete-item, .to-do-wrapper.completed, .completed .to-do.item {
-    background: #F35E5E;
-    color: #A33939;
+    background: #DDF8DE;
+    color: #5E9648;
     border-radius: 3px;
+    -webkit-transition: background .3s ease, color .3s;
+       -moz-transition: background .3s ease, color .3s;
+        -ms-transition: background .3s ease, color .3s;
+         -o-transition: background .3s ease, color .3s;
+            transition: background .3s ease, color .3s;
+}
+
+.completed.about-to-delete .complete-item, .to-do-wrapper.completed.about-to-delete, .completed.about-to-delete .to-do.item {
+    background: #E75959;
+    color: #A33939;
 }
 
 .delete-completed {

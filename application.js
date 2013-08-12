@@ -59,10 +59,13 @@ $(document).ready(function() {
     // Event Handlers
     $('#userInput').keydown(enterItem);
     $('.add').click(clickItem);
+    $('.delete-completed').on('mouseenter', function(){
+        $('.completed').addClass('about-to-delete');
+    });
+    $('.delete-completed').on('mouseleave', function(){
+        $('.completed').removeClass('about-to-delete');
+    });
     $('.delete-completed').click(deleteCompleted);
     $('.to-do-items-wrapper').on('click', '.to-do-wrapper', completeItem);
 
 }); // END OF DOCUMENT
-
-
-
