@@ -8,7 +8,7 @@ function clickItem() {
     // Once we know there's something to add, we can run the rest of the function
     } else {
         // Write the html for the to list item, and throw in the users input as the value of the to-do item
-        todoItem = '<li class="to-do-wrapper"><input type="text" class="to-do item" value="' + userInput + '" readonly><span id="userAction" class="submit complete-item"><i class="icon-remove"></i></span></li>';
+        todoItem = '<li class="to-do-wrapper"><input type="text" class="to-do item" value="' + userInput + '" readonly><span id="userAction" class="submit complete-item"><i class="icon-circle-blank"></i></span></li>';
         // Now place it on the page in the right spot
         $(todoItem).appendTo('.to-do-items-wrapper').slideDown(250);
         // Reset the value of the users input to '' so they don't accidentally add the same item twice
@@ -30,14 +30,18 @@ function enterItem() {
 
 // Function to change the styling for when an item is marked complete
 function completeItem() {
-    // Find the check mark button, and when it's clicked...
     $(this).find('#userAction').parent().toggleClass('completed');
+
+    var selectedClass = 'icon-circle';
+    var unselectedClass = 'icon-circle-blank';
+
     // If the completed class is found, show the icon-ok, as opposed to the icon-remove
     if ($(this).closest('.to-do-wrapper').hasClass('completed')) {
-        $(this).find('#userAction i').addClass('icon-ok').removeClass('icon-remove');
+        $(this).find('#userAction i').addClass(selectedClass).removeClass(unselectedClass);
     } else {
-        $(this).find('#userAction i').addClass('icon-remove').removeClass('icon-ok');
+        $(this).find('#userAction i').addClass(unselectedClass).removeClass(selectedClass);
     }
+
     // If the completed class is found, show the option to delete them, if not, hide the delete trigger
     if ($('.to-do-wrapper').hasClass('completed')) {
         $('.delete-completed').slideDown();
