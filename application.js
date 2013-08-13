@@ -1,7 +1,7 @@
 
 // Setting up the right classes to be used througout the UI
-var selectedClass = 'icon-ok-sign';
-var unselectedClass = 'icon-circle';
+var selectedClass = 'icon-ok';
+var unselectedClass = 'icon-circle-blank';
 
 // Take the user input upon click, and add it as a to-do item in a list
 function clickItem() {

@@ -172,12 +172,12 @@ input.add:active {background-color: #3CA13C;}
 }
 
 .to-do-wrapper.completed.about-to-delete {
-    background: #F58D73;
+    background: #F8DDD4;
 
 }
 
 .completed.about-to-delete .complete-item, .completed.about-to-delete .to-do.item {
-    color: #fff;
+    color: #A1543C;
 }
 
 .delete-completed {
